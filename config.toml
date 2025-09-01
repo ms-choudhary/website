@@ -1,0 +1,45 @@
+base_url = "https://ms-choudhary.github.io"
+title = "Mohit Choudhary"
+build_search_index = false
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml"]
+minify_html = true
+
+theme = "apollo"
+taxonomies = [{ name = "tags" }]
+
+[link_checker]
+internal_level = "warn"
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-dark", filename = "syntax-theme-dark.css" },
+  { theme = "ayu-light", filename = "syntax-theme-light.css" },
+]
+
+[extra]
+use_cdn = false
+theme = "toggle"
+
+menu = [
+  { name = "/posts", url = "/posts", weight = 1 },
+  { name = "/projects", url = "/projects", weight = 2 },
+  { name = "/TIL", url = "/tils", weight = 3 },
+  { name = "/books", url = "/books", weight = 4 },
+  { name = "/papers", url = "/papers", weight = 5 },
+]
+
+socials = [
+  { name = "linkedin", url = "https://www.linkedin.com/in/mohit-choudhary-32584939/", icon = "linkedin" },
+  { name = "github", url = "https://github.com/ms-choudhary", icon = "github" },
+  { name = "rss", url = "/atom.xml", icon = "rss" },
+]
+
+[extra.taxonomies]
+sort_by = "name"
+reverse = false
+
+[extra.analytics]
+enabled = false
